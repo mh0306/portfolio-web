@@ -214,6 +214,7 @@ transition: 1s;
 .aboutme .col-md-3{
     display:grid;
     justify-content: center;
+    margin-left: 30px;
 }
 .cards{
     width: 100%;
