@@ -1,3 +1,4 @@
+/*MAIN*/
 *{
     padding: 0;
     margin: 0;
@@ -90,14 +91,6 @@ nav .navbar-nav li.btn:hover a{
     cursor: pointer;
     margin: 30px 30px 30px 50px;
 }
-@media  screen and (max-width:768px) {
-    .container img{height: 300px;
-    width: 300px;}
-}
-@media  screen and (max-width:368px) {
-    .container img{height: 250px;
-    width: 250px;}
-}
 .container IMG:hover{
     border: 5px ridge #4BD30A;
     border-radius: 50%;
@@ -112,12 +105,6 @@ nav .navbar-nav li.btn:hover a{
     line-height: 1.2;
     margin: 0;
 }
-@media  screen and (max-width:768px) {
-    .container .hero-text h1{width: 350px;
-    font-size: 44px;}}
-@media  screen and (max-width:368px) {
-    .container .hero-text h1{width: 180px;
-    font-size: 29px;}}
 .container .hero-text h2{
     color: rgb(236, 240, 241);
     font-size: 41px;
@@ -134,12 +121,6 @@ span{
     font-size: 52px;
     font-weight: 400;
 }
-@media  screen and (max-width:768px) {
-    .container .hero-text h3{width: 350px;
-    font-size: 44px;}}
-@media  screen and (max-width:368px) {
-    .container .hero-text h3{width: 180px;
-    font-size: 29px;}}
 .container .hero-text p{
     width: 600px;
     max-width: 100%;
@@ -148,20 +129,6 @@ span{
     line-height: 1.5;
     margin-bottom: 30px;
     }
-@media  screen and (max-width:768px) {
-    .container .hero-text p{width: 350px;
-    max-width: 100%;
-    color: rgb(236, 240, 241);
-    font-size: 17px;
-    line-height: 1.5;
-    margin-bottom: 25px;}}
-@media  screen and (max-width:368px) {
-    .container .hero-text p{width: 180px;
-    max-width: 100%;
-    color: rgb(236, 240, 241);
-    font-size: 13px;
-    line-height: 1.5;
-    margin-bottom: 15px;}}
 .social a{
     width: 37px;
     height: 37px;
@@ -205,25 +172,52 @@ span{
     color: rgb(236, 240, 241);
 }
 @media  screen and (max-width:768px) {
+    .container .hero-text h1{
+    width: 350px;
+    font-size: 44px;}
+    .container img{
+        height: 300px;
+        width: 300px;}
+    .container .hero-text h3{
+        width: 350px;
+        font-size: 44px;}
+    .container .hero-text p{
+        width: 350px;
+        max-width: 100%;
+        color: rgb(236, 240, 241);
+        font-size: 17px;
+        line-height: 1.5;
+        margin-bottom: 25px;}
     .container .row .col-lg-7{
         max-width: 768px;
-        justify-content: center;
-    }}
+        justify-content: center;}
+    .container .row .col-lg-5{
+        max-width: 768px;
+        justify-content: center;}
+    }
+@media  screen and (max-width:368px) {
+    .container .hero-text h1{
+    width: 180px;
+    font-size: 29px;}
+    .container img{
+        height: 250px;
+        width: 250px;}
+    .container .hero-text h3{
+    width: 180px;
+    font-size: 29px;}
+    .container .hero-text p{width: 180px;
+    max-width: 100%;
+    color: rgb(236, 240, 241);
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px;}}
 @media  screen and (max-width:420px) {
     .container .row .col-lg-7{
         max-width: 420px;
-        justify-content: center;
-    }}
-@media  screen and (max-width:768px) {
-    .container .row .col-lg-5{
-        max-width: 768px;
-        justify-content: center;
-    }}
-@media  screen and (max-width:420px) {
+        justify-content: center;}
     .container .row .col-lg-5{
         max-width: 420px;
-        justify-content: center;
-    }}
+        justify-content: center;}}
 /*ABOUTME*/
 .container1 {
     padding-top: 30px;
@@ -241,18 +235,6 @@ span{
     padding: 0;
     rotate: 105deg;
     filter: saturate(3.5);
-}
-@media  screen and (max-width:1200px) {
-    .container1 img{height: 320px;
-    width: 320px;}
-}
-@media  screen and (max-width:768px) {
-    .container1 img{height: 300px;
-    width: 300px;}
-}
-@media  screen and (max-width:368px) {
-    .container1 img{height: 280px;
-    width: 280px;}
 }
 .container1 IMG:hover{
 transform: scale(1.02) rotate(1deg);
@@ -287,10 +269,6 @@ transition: 1s;
     width: 100%;
     max-width: 1100px;
 }
-@media  screen and (max-width:768px) {
-    .cards{
-        width: 100%;
-        max-width: 768px;}}
 .card {
     width: 370px;
     margin: 30px 0;
@@ -302,23 +280,6 @@ transition: 1s;
     align-items: center;
     text-align: center;
     color: rgb(236, 240, 241);
-}
-@media  screen and (max-width:768px) {
-    .aboutme .row .cards .card{
-        width: 290px;
-        height: 500px;
-        font-size: 70%;}
-    .aboutme .row .col-md-3{
-        padding: 0;
-        margin: 0;
-        max-width: 95%;}
-    }
-@media  screen and (max-width:368px) {
-    .aboutme .row .cards .card{
-        width: 190px;
-        height: 600px;
-        font-size: 40%;
-        margin: 0;}
 }
 .card img{
     width: 340px;
@@ -360,6 +321,33 @@ transition: 1s;
     transform: scale(1.1);
     background-color: #4BD30A;
     font-weight: 600;}
+@media  screen and (max-width:1200px) {
+    .container1 img{height: 320px;
+    width: 320px;}
+}
+@media  screen and (max-width:768px) {
+    .container1 img{height: 300px;
+    width: 300px;}
+    .cards{
+        width: 100%;
+        max-width: 768px;}
+    .aboutme .row .cards .card{
+        width: 290px;
+        height: 500px;
+        font-size: 70%;}
+    .aboutme .row .col-md-3{
+        padding: 0;
+        margin: 0;
+        max-width: 95%;}
+    }
+@media  screen and (max-width:368px) {
+    .container1 img{height: 280px;
+    width: 280px;}
+    .aboutme .row .cards .card{
+        width: 190px;
+        height: 600px;
+        font-size: 40%;
+        margin: 0;}}
 /*RESUME*/
 .container2 IMG{
     height: 440px;
@@ -367,14 +355,6 @@ transition: 1s;
     padding: 0;
     filter: saturate(3.5);
 }
-@media  screen and (max-width:1260px) {
-    .container2 IMG{
-        width: 380px;
-        height: 380px;}}
-@media  screen and (max-width:390px) {
-    .container2 IMG{
-        width: 290px;
-        height: 290px;}}
 .container2 IMG:hover{
 transform: scale(1.02) rotate(1deg);
 transition: 1s;
@@ -503,11 +483,14 @@ transition: 1s;
     font-size: 45px;
     margin-bottom: 40px;
 }
+@media  screen and (max-width:1260px) {
+    .container2 IMG{
+        width: 380px;
+        height: 380px;}}
 @media  screen and (max-width:768px) {
     .resume-sections {
         padding-right: 0;
-        padding-left: 0;
-    }
+        padding-left: 0;}
     .resume .resume-sections .row h1{
         font-size: 48px;
         background-size: 400px 190px;
@@ -515,8 +498,7 @@ transition: 1s;
         margin: 0;}
     .resume-sections .row h2{
         font-size: 37px;
-        margin-top: 30px;
-    }
+        margin-top: 30px;}
     .skillset .row {
         max-width:95%;}
     .skills ul {
@@ -526,16 +508,17 @@ transition: 1s;
     .allskills h1{
         font-size: 48px;
         background-size: 250px 150px;
-        margin: 0;
-    }
+        margin: 0;}
     .skillset .row .col-md-4{
         padding-right: 0;
-        max-width: 98%;
-    }}
+        max-width: 98%;}}
 @media  screen and (max-width:390px) {
     .resume .resume-sections .row h1{
         font-size: 45px;
-        margin: 0;}}
+        margin: 0;}
+    .container2 IMG{
+        width: 290px;
+        height: 290px;}}
 /*PORTFOLIO*/
 .container3 {
     text-align: right;
@@ -546,13 +529,6 @@ transition: 1s;
     margin-right: 0;
     padding: 0;
     filter: saturate(4)
-}
-@media screen and (max-width:768px){
-    .container3 img{
-        height: 340px;
-        width: 340px;
-        margin-bottom: 30px;
-    }
 }
 .container3 IMG:hover{
 transform: scale(1.02) rotate(1deg);
@@ -590,6 +566,11 @@ transition: 1s;
     height: 300px;
     width: 300px;
 }
+@media screen and (max-width:768px){
+    .container3 img{
+        height: 340px;
+        width: 340px;
+        margin-bottom: 30px;}}
 /*CONTACT*/
 .contact{
     max-width: 1170px;
