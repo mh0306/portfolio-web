@@ -547,6 +547,12 @@ transition: 1s;
     padding: 0;
     filter: saturate(4)
 }
+@media screen and (max-width:768px){
+    .container3 img{
+        height: 360px;
+        width: 360px;
+    }
+}
 .container3 IMG:hover{
 transform: scale(1.02) rotate(1deg);
 transition: 1s;
