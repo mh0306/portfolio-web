@@ -549,8 +549,9 @@ transition: 1s;
 }
 @media screen and (max-width:768px){
     .container3 img{
-        height: 360px;
-        width: 360px;
+        height: 340px;
+        width: 340px;
+        margin-bottom: 30px;
     }
 }
 .container3 IMG:hover{
