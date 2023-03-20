@@ -9,12 +9,6 @@
 body {
     overflow-x: hidden;
 }
-.main-width {
-    width: 1280px; 
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0px 20px; 
-}
 .hero {
     width: 100%;
     height: 100%;
@@ -23,6 +17,12 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+}
+.main-width {
+    width: 1280px; 
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px; 
 }
 /*NAVBAR*/
 header {
@@ -165,6 +165,14 @@ span{
     color: #4BD30A;
     transition: .4s;
 }
+.container .hero-text .row{
+    max-width: 98%;
+}
+.container .hero-text .row .col-lg-7,
+.container .hero-text .row .col-lg-5{
+    padding-right: 0;
+    max-width: 95%;
+}
 .index-message h4{
     text-align: center;
     padding: 2rem;
@@ -251,23 +259,30 @@ transition: 1s;
     font-weight: 400;
     margin-top: 30px;
 }
+.container1 .row{
+    max-width: 95%;
+}
 .aboutme {
     display: grid;
     grid-auto-flow: column;
     gap: 4px;
     align-items: center;
     justify-items: center;
+    justify-content: center;
+    align-content: center;
     margin: 0;
     background-image: url(../img/section-background1.png);
+}
+.aboutme .row{
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0;
 }
 .aboutme .col-md-3{
     display:grid;
     justify-content: center;
     margin-left: 30px;
-}
-.cards{
-    width: 100%;
-    max-width: 1100px;
 }
 .card {
     width: 370px;
@@ -322,24 +337,27 @@ transition: 1s;
     background-color: #4BD30A;
     font-weight: 600;}
 @media  screen and (max-width:1200px) {
-    .container1 img{height: 320px;
-    width: 320px;}
+    .container1 img{
+        height: 320px;
+        width: 320px;}
 }
 @media  screen and (max-width:768px) {
-    .container1 img{height: 300px;
-    width: 300px;}
-    .cards{
+    .container1 img{
+        height: 300px;
+        width: 300px;
+        rotate: 90deg;}
+    .aboutme .row .col-md-3{
+        padding: 0;
+        margin: 0;
+        max-width: 95%;}
+    }
+    .aboutme .row .cards{
         width: 100%;
         max-width: 768px;}
     .aboutme .row .cards .card{
         width: 290px;
         height: 500px;
         font-size: 70%;}
-    .aboutme .row .col-md-3{
-        padding: 0;
-        margin: 0;
-        max-width: 95%;}
-    }
 @media  screen and (max-width:368px) {
     .container1 img{height: 280px;
     width: 280px;}
@@ -371,15 +389,49 @@ transition: 1s;
     font-weight: 400;
     margin: 30px 50px;
 }
+.container2 .row{
+    max-width: 95%;
+}
 .resume {
     background-image: url(../img/section-background1.png) ;
 }
-.resume-sections{
-    padding: 100px 40px;
+.resume h1{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px;
 }
 .resume img{
     width: 100%;
     height: 250px;
+}
+.resume .card{
+    width: 75%;
+    margin: 20px 0;
+    padding: 0;
+    background-color: rgb(236, 240, 241);
+}
+.resume .col-md-3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.resume .resume-sections{
+    padding: 100px 40px;
+}
+.resume .resume-sections .row h1{
+    margin-bottom: 50px ;
+    font-size: 60px;
+    background-image: url(../img/title-background2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px 290px;
+    color: rgb(236, 240, 241);
+    padding: 60px
+}
+.resume .resume-sections .row h2{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
 }
 .accordion {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
@@ -399,14 +451,6 @@ transition: 1s;
 .accordion-button:not(.collapsed){
     background-color: rgba(32,31,29,1) !important;
     color: rgb(236, 240, 241) !important;
-}
-.resume h1{
-    text-align: center;
-    font-weight: 600;
-    margin: 20px;
-}
-.resume h1{
-    text-align: center;
 }
 .skills ul{
     position: relative;
@@ -444,17 +488,6 @@ transition: 1s;
     background-color: #4BD30A;
     border-bottom: 2px solid #4BD30A;
 }
-.resume .card{
-    width: 75%;
-    margin: 20px 0;
-    padding: 0;
-    background-color: rgb(236, 240, 241);
-}
-.resume .col-md-3{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
 .allskills{
     margin: 60px;
 }
@@ -468,26 +501,21 @@ transition: 1s;
     color: rgb(236, 240, 241);
     padding: 60px
 }
-.resume-sections .row h1{
-    margin-bottom: 50px ;
-    font-size: 60px;
-    background-image: url(../img/title-background2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 600px 290px;
-    color: rgb(236, 240, 241);
-    padding: 60px
-}
-.resume-sections .row h2{
-    text-align: center;
-    font-size: 45px;
-    margin-bottom: 40px;
-}
 @media  screen and (max-width:1260px) {
     .container2 IMG{
         width: 380px;
         height: 380px;}}
+    .container2 .row .col-md-5,
+    .container2 .row .col-md-7{
+        padding: 0;
+        max-width: 700px;
+    }
 @media  screen and (max-width:768px) {
+    .container2 .row .col-md-5,
+    .container2 .row .col-md-7{
+        padding: 0;
+        max-width: 95%;
+    }
     .resume-sections {
         padding-right: 0;
         padding-left: 0;}
@@ -496,8 +524,8 @@ transition: 1s;
         background-size: 400px 190px;
         padding: 50px 0;
         margin: 0;}
-    .resume-sections .row h2{
-        font-size: 37px;
+    .resume .resume-sections .row h2{
+        font-size: 33px;
         margin-top: 30px;}
     .skillset .row {
         max-width:95%;}
@@ -549,11 +577,6 @@ transition: 1s;
 .portfolio{
     background-image: URL(../img/section-background1.png);
 }
-.portfolio-image{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-}
 .portfolio p{
     color: rgb(22, 22, 22);
     font-weight: 400;
@@ -565,6 +588,11 @@ transition: 1s;
 .portfolio img{
     height: 300px;
     width: 300px;
+}
+.portfolio-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 @media screen and (max-width:768px){
     .container3 img{
