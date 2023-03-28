@@ -1,0 +1,228 @@
+@use './variables';
+
+.resume {
+    background-image: url(../img/section-background1.png) ;
+        .resume-sections{
+            display: grid;
+            padding: 100px 40px;
+            justify-items: center;
+            h1{
+                text-align: center;
+                font-weight: 600;
+                margin: 20px;
+            }
+            img{
+                width: 100%;
+                height: 250px;
+            }
+            .row{ 
+                max-width: 95%;
+                h1{
+                    margin-bottom: 50px ;
+                    font-size: 60px;
+                    background-image: url(../img/title-background2.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 600px 290px;
+                    color: $background-color;
+                    padding: 60px
+                }
+                h2{
+                    text-align: center;
+                    font-size: 35px;
+                    margin-bottom: 40px;
+                }
+                @media  screen and (max-width:1100px){
+                    h2{ font-size: 30px;
+                }
+            }
+                .col-md-3{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 50px;
+                    .card{
+                        width: 75%;
+                        margin: 20px 0;
+                        padding: 0;
+                        background-color: $background-color;
+                    }
+                }
+                .col-md-4{
+                    .accordion {
+                        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+                        .accordion-item{
+                            text-align: center;
+                            .accordion-header {
+                                button{
+                                    background-color: rgb(22, 22, 22);
+                                    color: $background-color;
+                                    border-bottom: 2px solid $main-color;
+                                }
+                            }
+                            .accordion-body{
+                                background-color: rgba(32,31,29,1);
+                                color: $background-color;
+                            }
+                            .accordion-button:not(.collapsed){
+                                background-color: rgba(32,31,29,1) !important;
+                                color: $background-color !important;
+                            }
+                        }
+                    }
+                }
+                @media  screen and (max-width:408px){
+                    .col-md-4{
+                        padding: 0;
+                    }}
+            }
+            @media  screen and (max-width:408px){
+                .row{
+                    max-width: 95%;
+                }
+            }
+            .allskills{
+                margin: 60px;
+                h1{
+                    margin-bottom: 50px ;
+                    font-size: 60px;
+                    background-image: url(../img/title-background.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 500px 200px;
+                    color: $background-color;
+                    padding: 60px;
+                }
+                @media  screen and (max-width:768px){
+                    h1{
+                        font-size: 48px;
+                        background-size: 250px 150px;
+                        margin: 0;}
+                }
+                .row{
+                    .col-md-3{
+                        .card {
+                            width: 370px;
+                            margin: 30px 0;
+                            border-radius: 6px;
+                            overflow: hidden;
+                            background: rgb(22, 22, 22) !important;
+                            transition: all 400ms ease;
+                            align-items: center;
+                            text-align: center;
+                            color: $background-color;
+                            p{
+                                padding: 10px;
+                                line-height: 1.5;
+                            }
+                            h1{
+                                margin: 10px;
+                            }
+                            a{
+                                text-decoration: none;
+                                display: inline-block;
+                                padding: 10px;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                color:$background-color;
+                                border: 1px solid $main-color;
+                                border-radius: 4px;
+                                transition: all 400ms ease;
+                            }
+                            a:hover{
+                                transform: scale(1.1);
+                                background-color: $main-color;
+                                font-weight: 600;
+                            }
+                        }
+                        .card:hover{
+                            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.623);
+                            transform: translateY(-1%);
+                        }
+                    }
+                }
+            }
+            .skillset {
+                .skills { 
+                    ul {
+                    position: relative;
+                        li{
+                            background-color: #191919;
+                            position: relative;
+                            left: 0;
+                            color: $background-color;
+                            list-style-type:none ;
+                            padding-left: 5px;
+                            border-left: 4px solid $main-color;
+                            transition: 0.5s;
+                            cursor: pointer;
+                            text-align:initial;
+                            font-size: 22px;
+                            line-height: 40px;
+                            border-bottom: 2px solid $main-color;
+                            border-radius: 6px;
+                            margin: 2px;
+                        }
+                        li::before {
+                            content: ''; 
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            transform: scaleX(0);
+                            transition: 0.5s;
+                        }
+                        li:hover::before {
+                            transform: scaleX(1);
+                        }
+                        li:hover {
+                            left: 10px;
+                            background-color: $main-color;
+                            border-bottom: 2px solid $main-color;
+                        }
+                    }   
+                }
+                @media  screen and (max-width:768px){
+                    .row{
+                        max-width:95%;
+                        .col-md-4{
+                            padding-right: 0;
+                            max-width: 98%;
+                            .skills{
+                                ul {
+                                    max-width:95%;
+                                    li:hover {
+                                        left: 0px;}}
+                            }}
+                    }
+                }
+            }
+        }
+        @media  screen and (max-width:410px){
+            .resume-sections {
+                padding-right: 0;
+                padding-left: 0;
+                .row{
+                    max-width: 90%;
+                    h1{
+                        font-size: 35px;
+                        background-size: 320px 150px;
+                        padding: 35px 0;
+                        margin: 0;}
+                    h2{
+                        font-size: 26px;
+                        margin-top: 27px;}
+                    .col-md-4{
+                        width: 95%;
+                        .studies{
+                            width: 90%;
+                        }
+                        .experience{
+                            width: 90%;
+                        }
+                        .entrepreneurship{
+                            width: 90%;
+                        }
+                        }
+                    }
+                }
+        }
+}
